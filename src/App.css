@@ -1,16 +1,26 @@
 .App {
+  padding-top: 15px;
   text-align: center;
+  background-color: #282c34;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.PicTitle{
+  color: #61dafb;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.PicDescription {
+  padding-left: 32px;
+  padding-right: 32px;
+  color:#61dafb
+}
+
+.LoadDataButton {
+  background-color: #282c34;
+  color: #61dafb;
+  font-size: large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: #61dafb;
 }
 
 .App-header {
