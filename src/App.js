@@ -16,7 +16,7 @@ export default function App(){
 
 
   const fetchPicOfDay = async () => {
-    const apiKey = process.env["MY_KEY"];
+    const apiKey = process.env.REACT_APP_MY_KEY;
     
     // 1995-06-16
     // Create a new date later than the above
@@ -38,6 +38,7 @@ export default function App(){
     <div className="App">
       <button className="LoadDataButton" onClick={fetchPicOfDay}>Load Pic Data</button>
       <h2 className="PicTitle">{picName}</h2>
+      <h1>{process.env.MY_KEY}</h1>
       <img 
       src={pic}
       alt="new"/>
