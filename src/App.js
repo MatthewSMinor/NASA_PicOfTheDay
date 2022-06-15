@@ -1,6 +1,5 @@
 import {React, useState} from 'react';
 import './App.css';
-import {config} from './config';
 
 function randomDateGen(start, end){
   return new Date(
@@ -17,7 +16,7 @@ export default function App(){
 
 
   const fetchPicOfDay = async () => {
-    const apiKey = config.MY_KEY;
+    const apiKey = process.env["MY_KEY"];
     
     // 1995-06-16
     // Create a new date later than the above
